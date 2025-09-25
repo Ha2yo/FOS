@@ -1,0 +1,40 @@
+ul {
+  /* 네비게이션 바를 화면 하단에 고정 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 56px);
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}

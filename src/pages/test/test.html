@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <script src="/pages/navbar/navbar.js"></script>
+    <script type="module" src="test.js"></script>
+  </head>
+
+  <body>
+    <nav-bar> </nav-bar>
+    <br>
+    <h1>DB test</h1>
+
+    <!-- Insert -->
+      <form id="db_insert">
+        <h2>INSERT</h2>
+        <input type="text" id="nameInput" placeholder="Enter name" />
+        <button id="btnInsert" type="button"> INSERT INTO test (names) VALUES ('?') </button>
+      </form>
+
+      <br>
+
+    <!-- Update -->
+     <form id="db_update">
+        <h2>UPDATE</h2>
+        <input type="text" id="updateId" placeholder="User ID" />
+        <input type="text" id="updateName" placeholder="New Name" />        
+        <button id="btnUpdate" type="button"> UPDATE test SET names = ? WHERE id = ? </button>
+      </form>
+
+      <br>
+<!--  Delete
+     <form id="db_delete">
+        <h2>DELETE</h2>
+        <input type="text" id="deleteId" placeholder="User ID" />
+        <button id="btnDelete" type="button"> DELETE FROM test WHERE id = ? </button>
+      </form>      
+
+      <br>
+      -->
+    <!-- Select -->
+      <form id="db_select">
+        <h2>SELECT</h2>
+        <button id="btnSelect" type="button"> select * from test;</button>
+      </form>
+    </main>
+
+    <div id="result"></div>
+  </body>
+</html>

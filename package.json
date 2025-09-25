@@ -1,0 +1,18 @@
+{
+  "name": "fos",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  },
+  "dependencies": {
+    "@choochmeque/tauri-plugin-google-auth-api": "^0.3.3",
+    "@tauri-apps/plugin-sql": "^2.3.0",
+    "styled-components": "^6.1.19",
+    "tauri-plugin-sql-api": "github:tauri-apps/tauri-plugin-sql#v1"
+  }
+}
