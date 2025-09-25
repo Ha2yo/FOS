@@ -171,4 +171,3 @@ vite.config.ts.timestamp-*
 # keystore
 upload-keystore.jks
 src-tauri/gen/android/keystore.properties
-
